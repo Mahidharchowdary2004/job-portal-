@@ -25,7 +25,7 @@
                                 <div class="col-md-3 mr-4">
                                     <p class="intro"></p>
                                     <div class="image">
-                                        <img src="{% static 'img/avatar.png' %}" alt=""
+                                        <img src="https://media.licdn.com/dms/image/D5603AQHG4yWkif-urA/profile-displayphoto-shrink_800_800/0/1692116235485?e=2147483647&v=beta&t=Wa56QUc0t1ZZBwqRSeYXOPnG4PhHy0_9XLQ6knRgw3Y" alt=""
                                              class="img-fluid rounded-circle">
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@
                                     <h4><a href="{% url 'jobs:applied-applicant-view' applicant.job.id applicant.id %}">{{ applicant.user.get_full_name }}</a><small>({{ applicant.get_status }})</small></h4>
                                     <h6>Skills:
                                         {% for tag in applicant.user.profile.tags.all %}
-                                            <span style="color: #ffffff;" class="badge featured-badge badge-secondary">{{ tag.name }}</span>
+                                            <span style="color: pink;" class="badge featured-badge badge-secondary">{{ tag.name }}</span>
                                         {% endfor %}
                                     </h6>
                                     <a href="mailto:{{ applicant.user.email }}?Subject=Interested"
